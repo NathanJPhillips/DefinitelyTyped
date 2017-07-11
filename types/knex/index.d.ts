@@ -272,7 +272,7 @@ declare namespace Knex {
     }
 
     interface OrderBy {
-        (columnName: string, direction?: string): QueryBuilder;
+        (columnName: string, direction?: "asc" | "desc"): QueryBuilder;
     }
 
     interface Union {
